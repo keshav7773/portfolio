@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+    <head>
+<title>
+    My Portfolio
+</title>
+<style>
+    main {
+        max-width: 1020px;
+        margin: 0 auto;
+    }
+     body {
+            
+            background: linear-gradient(45deg, #f212e7, #ec6505);  
+        }
+    .navbar {
+       display: flex;
+       justify-content: space-between;
+       background-color: #222;
+       padding: 10px;
+       color: white;
+       align-items: center;
+
+    }
+    .inner-nav {
+        display: flex;
+        gap: 10px;
+    }
+    .inner-nav a{
+        color: white;
+        text-decoration: none;
+    }
+    
+    h1 {font-size: 19px;
+    text-align: center;}
+    h3 {text-align: center;}
+    section {background-color: #c6cccb;
+    }
+
+    #myform form{
+        display: flex;
+        flex-direction: column;
+        max-width: 500px;
+        margin: auto;
+        gap: 10px;
+        
+    }
+    .my-cards {
+        display: flex;
+        flex-direction: row;
+        gap: 15px;
+        justify-content: center;
+    }
+    .my-cards .card{
+        background-color: #222;
+        color: white;
+        padding: 25px;
+        border-radius: 10px;
+    }
+    .mylogo {
+        max-width: 200px;
+        
+    }
+
+    .from-outer {
+    display: flex;
+    align-items: center;
+}
+@media (max-width: 768px) {
+.my-cards {
+    flex-direction: column;
+}
+
+.navbar {
+    flex-direction: column;
+}
+.outer-form {
+    flex-direction: column;
+}
+
+}
+    
+</style>
+    </head>
+
+    <body>
+        <main>
+        <nav class="navbar">
+            
+            <img class="mylogo" src="https://www.biyanicolleges.org/wp-content/uploads/2024/03/cropped-cropped-logo-1-1024x273.png.webp" alt="My logo image">
+            <div class="inner-nav">
+            <a href="#aboutme">Aboutme</a>
+            <a href="#abouthobby">Hobby</a>
+            <a href="https://www.biyanicolleges.org/"target="_blank">aboutUs</a>
+            <a href="#myform">ContactUs</a>
+        </div>
+        </nav>
+        <section class="myclass" id="aboutme">
+            <h1>My Hobbies</h1>
+            <div class="my-cards">
+            <div class="card">
+                
+        <h1>
+            My name is Keshav
+        </h1>
+         <h3>
+            I'm from 2nd sem and from BCA streame.
+        </h3>
+    </div>
+    <div class="card">
+        <h1>I like to play Cricket.</h1>
+        <h3>Cricket is very popular game.</h3>
+    </div>
+        
+        </section>
+        
+        
+        <section class="myclass" id="abouthobby" style="background-color:rgb(198, 210, 211);">
+    
+           
+        </section>
+        
+
+         <section class="myclass" id="aboutme">
+            <h1>My progress</h1>
+            <div class="my-cards">
+            <div class="card">
+                
+                <label>My HTML progress</label>
+                <progress value="70" max="100">
+                </div>
+
+                <div class="card">
+                    <label>My course progress</label>
+                    <meter value="5" min="3" max="10" low="4" high="7">
+                    </div>
+                    </div>
+        </section>
+        <section  id="myform">
+            <h3>Contact Us</h3>
+            <div class="from-outer">
+                <div class="my-details">
+                    <h2>My Email:</h2>
+                    <p>hello@keshavpadiyar.com</p>
+                    <h2>My Phone:</h2>
+                    <p>+91 9400000000</p>
+                </div>
+           <form id="myForm">
+                <input id="name" type="text" name="text"
+                placeholder="Your Name" required> <br> <input id="email" type="email" name="email" placeholder="Your Email"><br>
+                 <input type="date" name="date">
+                 <select>
+                    <option>1st year</option>
+                    <option>2nd year</option>
+                    <option>3rd year</option>
+                 </select>
+                 <input list="browsers" id="mylist" placeholder="select or type...">
+                 <datalist id="browsers">
+                    <option>1st year</option>
+                    <option>2nd year</option>
+                    <option>3rd year</option>
+                 </datalist>
+                <textarea id="textarea" rows="4" placeholder="your message"></textarea><br>
+                <button type="submit" value="Submit">Submit</button>
+            </form>
+
+        </section>
+
+        <section class="Myclass" id="abouthobby">
+            <h1>"Hobbies"</h1>
+            <p>Travelling</p>
+            <p>Playing Cricket</p>
+        </section>
+
+        <section>
+        <details>
+            <summary>I have a secret</summary>
+            <p>I can solve the rubik's cube in a minute. </p>
+        </details>
+        </section>
+        <section>
+           <label>My HTML progress</label>
+           <progress value="70" max="100">
+        </section>
+        <section>
+            <label>My course progress</label>
+            <meter value="10" min="7" max="25" low="4" high="10"></meter>
+        </section>
+        <section>
+            <input type="color" name="color">
+            <br>
+            <input type="date" name="date">
+            <br>
+            <input type="range" value="70" max="100">
+        </section>
+       
+        <section>
+            <h1>Student Details</h1>
+            <table border="2px">
+                <thead>
+                    <th>Sr. no.</th>
+                    <th>Student Name</th>
+                    <th>Student class</th>
+                    <th>Student Hobbies</th>
+                    <th>progress</th>
+                    <th>Student Record</th>
+                </thead>
+                <tbody>
+                    <tr>
+                    <td>1</td>
+                    <td>Keshav</td>
+                    <td>1st Year</td>
+                    <td>Cricket</td>
+                    <td><progress value="70" max="100"></progress></td>
+                     <td><meter value="7" min="3" max="10" low="4" high="7"></meter></td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Rohit</td>
+                        <td>2nd Year</td>
+                        <td>Basketball</td>
+                        <td><progress value="40" max="100"></progress></td>
+                         <td><meter value="7" min="5" max="10" low="4" high="7"></meter></td>
+                    </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <section>
+            
+            <h1>MUSIC</h1>
+            <audio controls loop>
+                <div class="music-container">
+        <div class="music-info">
+            
+            
+            <source src="my-song.mp3" type="audio/mpeg">
+            
+        </div>
+                
+            </audio>
+        </section>
+           
+        <section>
+            <h1>VIDEO</h1>
+            <video controls loop muted>
+                <source src="my-video.mp4" type="video/mp4" width="640" height="360">
+            </video>
+        </section>
+ </main>
+
+
+       
+       <script>
+      let myForm = document.getElementById("myForm");
+      myForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+
+        let myName = document.getElementById("name");
+        let myEmail = document.getElementById("email");
+        let myTextArea = document.getElementById("textarea");
+
+        let nameValue = myName.value;
+        let emailValue = myEmail.value;
+        let textAreaValue = myTextArea.value;
+
+        if(nameValue === "" || emailValue === ""){
+            alert("Enter name first");
+        }
+        else{
+            alert("success!!");
+        }
+      });
+       </script>
+    </body>
+</html>
